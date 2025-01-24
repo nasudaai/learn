@@ -4,8 +4,10 @@ const arg = parseInt(process.argv[2])
 
 console.log(arg)
 
-if ( "number"  === typeof arg) {
-  console.log(arg)
-} else {
+if ( Number.isNaN(arg) ) {
+
   console.log('NaN!!!!!!!!!!!!!!')
+} else {
+
+  console.log(arg)
 }
