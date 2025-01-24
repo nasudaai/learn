@@ -7,3 +7,7 @@ parseInt()
 arr or obj
 
 fs.write
+
+
+date
+calculation
