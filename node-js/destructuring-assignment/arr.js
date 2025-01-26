@@ -16,4 +16,19 @@ rest.forEach((name) => {
   console.log(name.name)
 })
 
+function returnForEach(arr) {
+  arr.map((obj) => {
+    const name = obj.name
+    return name
+  })
+}
 
+let names = []
+console.log(names)
+names = returnForEach(rest)
+
+console.log(names)
+
+const namesType = typeof names
+console.log(namesType)
+console.log(rest)
