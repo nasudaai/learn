@@ -5,9 +5,10 @@ function returnHello() {
 }
 
 
-function hello() {
-  console.log("Hello World!!")
+function hello(fn) {
+  const word = fn()
+  console.log(word)
 }
 
 
-hello()
+hello(returnHello)
