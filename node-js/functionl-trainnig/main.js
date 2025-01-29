@@ -1,15 +1,16 @@
-function rWord() {
-  return "aaa"
+const arg = process.argv[2]
+console.log(arg)
+
+function rWord(arg) {
+  return arg
 }
 
-const a = rWord()
+const a = rWord(arg)
 console.log(a)
 
-
-function use(callback) {
-  const a2 = callback()
-  console.log(a2)
+function use(fn, arg) {
+  const a = rWord(arg)
+  console.log(a)
 }
 
-
-use(rWord)
+use(rWord, arg)
