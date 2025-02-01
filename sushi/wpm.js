@@ -6,7 +6,7 @@ const { keyTypes, typesPerSecond, miss } = obj
 
 console.log(obj)
 
-const wpm = typesPerSecond * 60 / 5
+const wpm = parseFloat(typesPerSecond) * 60 / 5
 const missPercentage = miss / (parseInt(keyTypes) + parseInt(miss)) * 100
 const message = "wpm: " + wpm + ".\nmiss:" + missPercentage.toFixed(2) + "%."
 console.log(message)
