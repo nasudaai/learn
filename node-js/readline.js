@@ -5,8 +5,16 @@ const rl = readline.createInterface({
   output: process.stdout,
 })
 
-rl.question('Please word\n>>> ', function(word) {
-  console.log(`Thank you ${word}`)
+
+rl.question('Please word\n>>> ', function fn(word) {
+
+  if (word === "ok") {
+
+    console.log(`Thank you ${word}`)
+  } else {
+    console.log("one more")
+  }
 
   rl.close()
+
 })
