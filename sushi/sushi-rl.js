@@ -5,11 +5,16 @@ const rl = readline.createInterface({
   output: process.stdout,
 })
 
-rl.question('yen typePerSecond miss cource types \n>>> ', function(yen) {
+rl.question('yen typePerSecond miss cource types \n>>> ', function(data) {
   console.log(`Thank you `)
 
-  const arr1 = yen
+  const arr = data.replace(/\s+/g, ",")
+  const arr1 = []
+  
+  arr1.push(data)
 
+  
+  console.log(arr)
   console.log(arr1)
 
   rl.close()
