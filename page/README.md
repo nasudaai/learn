@@ -1,3 +1,3 @@
 # page
 
-(page)[https://nasudaai.github.io/learn/]
+[page](https://nasudaai.github.io/learn/)
